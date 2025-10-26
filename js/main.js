@@ -1,5 +1,5 @@
 const game_area_element = document.getElementById("game-area");
-const game_area_rect = game_area_element.getBoundingClientRect();
+let game_area_rect = game_area_element.getBoundingClientRect();
 const score_element = document.getElementById("score");
 const start_button = document.getElementById("start-button");
 start_button?.addEventListener("click", start);
@@ -63,6 +63,7 @@ class Butterfly {
     };
     cooldown = 0;
     reset() {
+        game_area_rect = game_area_element.getBoundingClientRect();
         this.pos = { x: game_area_rect.width - 50, y: this.init_y };
         this.velocity = 0;
         this.jump_power = this.INIT_JUMP_POWER;
@@ -373,6 +374,7 @@ function game_loop() {
     }
     if (scale_list.length === 0 || scale_list[scale_list.length - 1].pos.x > Scale.horizontal_gap) {
         scale_list.push(new Scale());
+        game_area_rect = game_area_element.getBoundingClientRect();
         if (Math.random() < Flower.spawn_chance) {
             flower_list.push(new Flower());
         }
