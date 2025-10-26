@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Butterfly</title>
+    <script src="./js/main.js" type="module"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button id="dash-button" type="button">dash</button>
+    <button id="teleport-button" type="button">teleport</button>
+    <button id="time-button" type="button">time stop</button>
+    <div id="game-container">
+      <div id="game-area">
+        <div id="butterfly-container" class="game-object">
+          <img src="./img/KV-logo-1.svg" alt="" id="butterfly" />
+        </div>
+        <div>
+          <img src="./img/scale.svg" alt="" class="scale scale-top game-object" />
+          <img src="./img/scale.svg" alt="" class="scale scale-bottom game-object" />
+
+          <img src="./img/flowers/Vector.png" alt="" class="flower game-object" />
+          <img src="./img/flowers/Vector-1.png" alt="" class="flower game-object" />
+          <img src="./img/flowers/Vector-2.png" alt="" class="flower game-object" />
+          <img src="./img/flowers/Vector-3.png" alt="" class="flower game-object" />
+          <img src="./img/flowers/Vector-4.png" alt="" class="flower game-object" />
+          <img src="./img/flowers/Vector-5.png" alt="" class="flower game-object" />
+        </div>
+        <div class="top-bar">
+          <div class="top-bar-container">
+            <img src="./img/flowers/Vector.png" alt="" class="flower-icon" />
+            &nbsp;x&nbsp;<span class="flower-amount">0</span>
+          </div>
+          <div id="score">Score: 0</div>
+          <div class="top-bar-container"></div>
+        </div>
+      </div>
+      <div id="shop-area">
+        <div id="shop">
+          <div class="top-bar">
+            <div class="top-bar-container">
+              <img src="./img/flowers/Vector.png" alt="" class="flower-icon" />
+              &nbsp;x&nbsp;<span class="flower-amount">0</span>
+            </div>
+            <!-- <div class="top-bar-container align-center">Shop</div> -->
+            <div class="top-bar-container align-right"><button type="button" id="achievement-button">Achievements</button></div>
+          </div>
+          <div class="flex-grow">
+            <h2 class="align-self-center">Upgrades</h2>
+            <div class="upgrade-container">
+              <div class="upgrade"><a href=""></a>dash</div>
+            </div>
+          </div>
+          <div class="flex-grow">
+            <h2 class="align-self-center">Abilities</h2>
+
+            <div class="upgrade-container">
+              <div class="upgrade">
+                <a href=""></a>
+                <div class="upgrade-info-container">
+                  <div class="level">lvl 1</div>
+                  <div class="upgrade-name">Dash</div>
+                  <div class="price">5</div>
+                </div>
+              </div>
+              <div class="upgrade">
+                <a href=""></a>
+                <div class="upgrade-info-container">
+                  <div class="level">lvl 1</div>
+                  <div class="upgrade-name">Teleport</div>
+                  <div class="price">5</div>
+                </div>
+              </div>
+              <div class="upgrade">
+                <a href=""></a>
+                <div class="upgrade-info-container">
+                  <div class="level">lvl 1</div>
+                  <div class="upgrade-name">Time Stop</div>
+                  <div class="price">5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
