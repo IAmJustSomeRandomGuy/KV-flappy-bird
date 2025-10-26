@@ -1,0 +1,165 @@
+:root {
+  --default_color: #97abe1;
+  --cta_color: #6369a5;
+  --darker_color: #444872;
+  --darkest_color: #394692;
+}
+
+body {
+  background-color: var(--default_color);
+}
+
+.game-object {
+  position: absolute;
+  right: 100vw;
+}
+
+#game-container {
+  width: 100%;
+  height: 640px;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+  max-width: 1000px;
+}
+
+#game-area {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#shop-area {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  /* visibility: hidden; */
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  display: flex;
+}
+
+#shop {
+  overflow: hidden;
+  background-color: var(--default_color);
+  flex-grow: 1;
+  margin: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  margin: 20px;
+  position: relative;
+  display: flex;
+}
+
+#score {
+  font-size: xx-large;
+  text-justify: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.top-bar-container {
+  font-size: x-large;
+  flex-grow: 1;
+  display: flex;
+  align-content: center;
+}
+
+.flower-icon {
+  height: 30px;
+}
+
+.align-right {
+  justify-content: right;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.align-self-center {
+  justify-self: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.upgrade-container {
+  display: flex;
+  flex-direction: row;
+  /* scroll-behavior: smooth;
+  overflow-x: scroll; */
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.upgrade {
+  width: 150px;
+  height: 150px;
+  border: #444872 3px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.upgrade-info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+
+/* .level {
+} */
+
+#butterfly {
+  height: 80px;
+}
+
+#butterfly-container {
+  left: 50px;
+  border-radius: 50%;
+  padding: 1px;
+  height: 80px;
+  width: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(--darker_color 100%, transparent 0);
+}
+
+.scale {
+  height: 750px;
+  width: 100px;
+}
+
+.scale-top {
+  rotate: 180deg;
+}
+
+.flower {
+  height: 65px;
+}
+
+#achievement-button {
+  background-color: var(--cta_color);
+  border-radius: 5px;
+  border: none;
+  font-size: medium;
+}
+
+#achievement-button:hover {
+  background-color: var(--darker_color);
+}
